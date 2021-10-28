@@ -1,0 +1,65 @@
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  max-width: 900px;
+  margin: 0 auto;
+  
+}
+
+article {
+  flex-basis: 45%; 
+  display: flex;
+  flex-direction: row;
+  min-width: 250px;
+  border-collapse: collapse; 
+  border: 1px solid lightgray;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.404);
+  background-color: white;
+  font-family: 'Lato', sans-serif;
+  transition: all 1s ease-in-out;
+}
+article:hover {
+  box-shadow: 0 10px 10px rgba(255, 237, 71, 0.658);
+  background-color: rgba(252, 237, 104, 0.842);
+  color: blue;
+  
+}
+article:nth-child(odd) img {
+  order: -2;
+}
+article:nth-child(3) {
+  
+}
+h1 {
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Zen Antique', serif;
+  box-shadow: 0 10px 10px rgba(113, 84, 172, 0.507);
+  color: rgb(255, 254, 254);
+  background-image: url(./images/saint-petersburg-bg.jpg);
+  width: 900px;
+  margin: 0 auto;
+  background-position: center;
+  border-radius: 10px;
+
+}
+article a {
+  color: rgb(36, 201, 77);
+  text-decoration: none;
+  text-transform: uppercase;
+  
+}
+article div {
+  padding: 10px;
+  order: -1;
+}
+article img {
+  object-fit: cover;
+}
+
+
